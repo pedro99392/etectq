@@ -61,4 +61,132 @@
     section h2 {
       color: #ffc107;
       font-size: 2rem;
-      margin-bottom:
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ffc107;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* Produtos */
+    .produtos {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .produto {
+      background: #1e2f47;
+      border-radius: 8px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .produto:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 193, 7, 0.8);
+    }
+
+    .produto img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .produto h3 {
+      color: #ffc107;
+      margin-bottom: 10px;
+      font-size: 1.25rem;
+    }
+
+    .produto p {
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+
+    /* Sobre */
+    .sobre p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    /* Rodapé */
+    footer {
+      background: #123456;
+      text-align: center;
+      padding: 20px;
+      color: #ffc107;
+      font-weight: bold;
+      border-top: 3px solid #ffc107;
+    }
+
+    @media (max-width: 768px) {
+      .produtos {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .produto {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fábrica de Telescópios Estelar</h1>
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="produtos">
+      <h2>Nosso Portfólio</h2>
+      <div class="produtos">
+        <div class="produto">
+          <img src="https://images.unsplash.com/photo-1519183071298-a2962cc36f3a?auto=format&fit=crop&w=400&q=80" alt="Telescópio Básico" />
+          <h3>Telescópio Básico</h3>
+          <p>Ideal para iniciantes, com ótica de alta qualidade para observar planetas e estrelas.</p>
+        </div>
+        <div class="produto">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Telescópio Profissional" />
+          <h3>Telescópio Profissional</h3>
+          <p>Equipamento avançado para astrônomos experientes, com lente de alta precisão.</p>
+        </div>
+        <div class="produto">
+          <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=400&q=80" alt="Telescópio Portátil" />
+          <h3>Telescópio Portátil</h3>
+          <p>Leve e compacto, perfeito para levar em viagens e observar o céu em qualquer lugar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <h2>Sobre a Fábrica</h2>
+      <p>
+        Fundada em 1995, a Fábrica de Telescópios Estelar tem o compromisso de levar a paixão pela astronomia a todos, desenvolvendo equipamentos de alta qualidade e inovação tecnológica. Nosso time de especialistas garante produtos confiáveis e duradouros para observadores amadores e profissionais.
+      </p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p style="max-width: 700px; margin: 0 auto; color: #ccc; font-size: 1.1rem;">
+        Para mais informações, envie um e-mail para <a href="mailto:contato@telescopiosestelar.com" style="color: #ffc107; text-decoration: underline;">contato@telescopiosestelar.com</a> ou ligue para (11) 1234-5678.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Fábrica de Telescópios Estelar - Todos os direitos reservados
+  </footer>
+</body>
+</html>
